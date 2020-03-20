@@ -27,7 +27,7 @@ const routes = [
     path: '/info/:id',
     name: 'Info',
     component: Info,
-    props: true
+    //props: true
   }
 ];
 

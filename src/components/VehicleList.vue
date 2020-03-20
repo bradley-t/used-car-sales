@@ -80,7 +80,7 @@ export default {
 }
 .image > img{
   max-height: 300px;
-  max-width: 500px;
+  max-width: 300px;
   padding-right: 25px;
 }
 .info{

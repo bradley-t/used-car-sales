@@ -55,6 +55,8 @@ export default {
     align-items: center;
     justify-content: center;
     height: 12em;
+    font-family: 'Poppins', sans-serif;
+    color: #324a5e;
   }
 .footer-container{
   width:75%;
@@ -64,7 +66,6 @@ export default {
   align-items: center;
 }
 .footer-discription{
-  color: rgba(0,0,0,1);
   font-size: .74rem;
   font-weight: 400;
   line-height: 1.5;
@@ -78,7 +79,8 @@ export default {
 .con-link:link,
 .con-link:visited{
   text-decoration: underline;
-  color: rgba(0,0,0,1);
+  color: #324a5e;
+  text-decoration-color: #ffd05bff;
 }
 .con-link:hover,
 .con-link:active{
@@ -105,6 +107,7 @@ body {
 
 #menu a {
   color: #324a5eff;
+  text-decoration-color: #ffd05bff;
 }
 
 #brand {

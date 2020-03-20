@@ -8,6 +8,7 @@
             <th>Price</th>
             <th>Location</th>
             <th> </th>
+            <th> </th>
         </tr>
         <tr class="vehicle" v-for="vehicle in this.$root.$data.compare" :key="vehicle.id">
             <td><img class="thumbnail" :src="require('./../assets/images/vehicles/'+vehicle.image)"></td>
@@ -16,7 +17,11 @@
             <td>{{vehicle.model}}</td>
             <td>{{vehicle.price}}</td>
             <td>{{vehicle.city}}, {{vehicle.state}}</td>
-            <td><button @click="remove(vehicle)">Remove</button></td>
+            <td><router-link :to="'/info/'+vehicle.id">
+                <button class="compare">More Info</button>
+            </router-link></td>
+            <td>
+            <button @click="remove(vehicle)">Remove</button></td>
         </tr>
     </table>    
 </template>
