@@ -22,6 +22,17 @@
     </div>
   </div>
   <router-view />
+  <div class='footer'>
+    <div class="footer-container">
+      <div class='footer-discription'>Bradley Taylor</div>
+      <div class='footer-discription divider'>|</div>
+      <div class='footer-discription'>Web Design Project March 2020</div>
+      <div class='footer-discription divider'>|</div>
+      <div class='footer-discription'>
+        <a class='con-link' href="https://github.com/Bradley-A-Taylor/cp3">GitHub Repository</a>
+      </div>
+    </div>
+  </div>
 </div>
 </template>
 
@@ -36,6 +47,45 @@ export default {
 </script>
 
 <style>
+.footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12em;
+  }
+.footer-container{
+  width:75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer-discription{
+  color: rgba(0,0,0,1);
+  font-size: .74rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+}
+.divider{
+  font-size: .9rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.con-link:link,
+.con-link:visited{
+  text-decoration: underline;
+  color: rgba(0,0,0,1);
+}
+.con-link:hover,
+.con-link:active{
+  color: rgba(0,0,0,1);
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
